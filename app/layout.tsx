@@ -1,0 +1,69 @@
+/**
+ * Root layout for the entire Next.js application.
+ *
+ * Sets up global fonts, dark-mode theme provider, and the toast notification
+ * host. Every page in the app is rendered inside `{children}` below.
+ */
+
+import type { Metadata } from "next";
+import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google";
+import "./globals.css";
+import { cn } from "@/lib/utils";
+import { ThemeProvider } from "@/components/providers/theme-provider";
+import { Toaster } from "@/components/ui/sonner";
+
+/** Monospace font used as the app's primary typeface. */
+const jetbrainsMono = JetBrains_Mono({subsets:['latin'],variable:'--font-mono'});
+
+/** Sans-serif family exposed as a CSS variable for utility classes. */
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+/** Monospace Geist variant for code-like UI elements. */
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "PR Reviewer",
+  description: "AI-powered GitHub pull request review assistant for code quality, security, and maintainability.",
+};
+
+/**
+ * Root HTML shell wrapping all routes.
+ *
+ * @param children - Page content from nested layouts and route segments.
+ * @returns The `<html>` and `<body>` structure with theme and toasts.
+ */
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="en"
+      className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-mono", jetbrainsMono.variable)
+
+
+      }
+      // next-themes may set class on <html> before hydration — suppress mismatch warning
+      suppressHydrationWarning
+    >
+      <body className="min-h-full flex flex-col">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+          <Toaster />
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}

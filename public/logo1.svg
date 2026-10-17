@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="176" viewBox="0 0 760 176" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Pull Request Reviewer</title>
+  <desc id="desc">A friendly AI reviewer robot and code review card beside the Pull Request Reviewer wordmark.</desc>
+  <defs>
+    <linearGradient id="blue" x1="8" y1="18" x2="140" y2="150" gradientUnits="userSpaceOnUse"><stop stop-color="#36D6F5"/><stop offset="1" stop-color="#2463EB"/></linearGradient>
+    <linearGradient id="purple" x1="77" y1="14" x2="158" y2="153" gradientUnits="userSpaceOnUse"><stop stop-color="#B65CFF"/><stop offset="1" stop-color="#6537F5"/></linearGradient>
+    <linearGradient id="green" x1="112" y1="57" x2="158" y2="104" gradientUnits="userSpaceOnUse"><stop stop-color="#5AF2B0"/><stop offset="1" stop-color="#19BF7A"/></linearGradient>
+  </defs>
+  <!-- Compact emblem -->
+  <g transform="translate(3 3) scale(.96)">
+    <path d="M43 43 15 72 43 101" stroke="url(#blue)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M115 43 143 72 115 101" stroke="url(#purple)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="33" y="74" width="94" height="67" rx="12" fill="#071329"/>
+    <rect x="38" y="79" width="84" height="57" rx="8" fill="#E5EDFF"/>
+    <circle cx="49" cy="89" r="2.5" fill="#FB5B65"/><circle cx="57" cy="89" r="2.5" fill="#FFB52E"/><circle cx="65" cy="89" r="2.5" fill="#27C982"/>
+    <path d="M47 102H71" stroke="#94A3C4" stroke-width="4" stroke-linecap="round"/>
+    <path d="M47 112H82" stroke="#28C982" stroke-width="5" stroke-linecap="round"/>
+    <rect x="54" y="32" width="8" height="19" rx="4" fill="#2F88F6"/><circle cx="58" cy="28" r="9" fill="#37CFF6"/>
+    <rect x="43" y="47" width="40" height="36" rx="14" fill="#071329"/>
+    <rect x="46" y="49" width="34" height="31" rx="12" fill="#F8FAFF"/>
+    <rect x="49" y="56" width="28" height="17" rx="7" fill="#13234A"/>
+    <path d="M54 63Q58 57 62 63M65 63Q69 57 73 63" stroke="#41D5F6" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="113" cy="58" r="17" fill="url(#green)" stroke="#071329" stroke-width="4"/>
+    <path d="M105 58L111 64L122 51" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="178" y="82" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="750" letter-spacing="-1.2">Pull Request</text>
+  <text x="178" y="122" fill="#9CB7E9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="750" letter-spacing="-1.2">Reviewer</text>
+  <path d="M179 143H277" stroke="#2BCBF1" stroke-width="4" stroke-linecap="round"/>
+  <path d="M287 143H328" stroke="#7C4DFF" stroke-width="4" stroke-linecap="round"/>
+</svg>
