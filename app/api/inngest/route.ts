@@ -16,6 +16,8 @@ import { reviewPullRequest } from "@/features/reviews/server/review-pr-function"
 import { serve } from "inngest/next";
 import { processTask } from "./function";
 
+// Allow this route to run for up to 5 minutes on supported Vercel plans.
+export const maxDuration = 300;
 /**
  * Next.js route handlers that Inngest uses to run and manage functions.
  *
